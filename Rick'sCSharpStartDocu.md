@@ -21,7 +21,6 @@ In this section the in- and output of the application will be described.
 |----|----|----------|
 |Customer number|`integer`|0 <`number`< 20|
 |Name Of Customer|`String` |not empty|
-|City Of Customer|`String` |not empty|
 |RentalstartDate|`date`|not empty|
 |RentalEndDate|`date`|not empty|
 |VolumeOfContainer|`interger`|0 <`number`< 20|
