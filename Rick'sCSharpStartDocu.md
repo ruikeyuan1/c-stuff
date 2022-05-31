@@ -11,5 +11,13 @@ each container. The payable charges for each rented container period must be
 calculated and shown. The total income, the average volume and the longest 
 rental period must also be shown cumulatively.    Read the introduction of this appendix and appendix 7.3 thoroughly.  
 
-## Actual Problem Description
+## INPUT
       
+|Case|Type|Conditions|
+|----|----|----------|
+|Customer number|`integer`|0 <`number`< 20|
+|Name Of Customer|`String` |not empty|
+|City Of Customer|`String` |not empty|
+|RentalstartDate|`date`|not empty|
+|RentalEndDate|`date`|not empty|
+|VolumeOfContainer|`interger`|0 <`number`< 20|
