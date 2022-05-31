@@ -48,3 +48,15 @@ In this section the in- and output of the application will be described.
 | ------------- | --------------------------------- | --------------------------------- |
 | `rentalOne` | id:1 <br/>startDate: 20200506<br />endDate:20200520<br />price: 40.00<br/><br/>volumeOfContainer:3m^3 | `new Container-rent(1, 20200506, 20200520, 40.00,3m^3 )` |
 | `rentalTwo` | id:2 <br/>startDate: 20200706<br />endDate:20200720<br />price: 40.00<br/><br/>volumeOfContainer:5m^3 | `new Container-rent(2, 20200706, 20200720, 40.00,5m^3 )` |
+
+#### Company
+| ID           | Input | Code          |
+| ------------ | ----- | ------------- |
+| `CompanyOne` | name: Rick's company| `new Company ()` |
+
+#### Customer
+
+| ID        | Input                                                        | Code                                               |
+| --------- | ------------------------------------------------------------ | -------------------------------------------------- |
+| `jan`     | number: 1<br />name: Jan<br />                    | `new Customer(1, "Jan")`                  |
+| `martijn` | number: 2<br />name: Martijn<br /><br /> | `new Customer(2, "Martijn")` |
