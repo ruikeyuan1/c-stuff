@@ -11,7 +11,11 @@ each container. The payable charges for each rented container period must be
 calculated and shown. The total income, the average volume and the longest 
 rental period must also be shown cumulatively.    Read the introduction of this appendix and appendix 7.3 thoroughly.  
 
-## INPUT
+### Input & Output
+
+In this section the in- and output of the application will be described.
+
+#### INPUT
       
 |Case|Type|Conditions|
 |----|----|----------|
@@ -21,3 +25,19 @@ rental period must also be shown cumulatively.    Read the introduction of this 
 |RentalstartDate|`date`|not empty|
 |RentalEndDate|`date`|not empty|
 |VolumeOfContainer|`interger`|0 <`number`< 20|
+
+
+#### Output
+
+|Case|Type|
+|----|----|
+|RentalPeriod|`integer`|
+|Price(per m3 per day)|`double`|
+|Payable charges|`double`|
+
+#### Calculations
+
+| Case              | Calculation                        |
+| ----------------- | ---------------------------------- |
+| Payable charges | The sum of all the acumulative prices. |
+| RentalPeriod | The sum of all the rental days |
