@@ -44,6 +44,14 @@ In this section the in- and output of the application will be described.
 | containerPrice | current price of each container |
 | The total income| The sum of all the payable charges in every rental |
 
+## Testplan
+
+In this section the testcases will be described to test the application.
+
+### Test Data
+
+In the following table you'll find all the data that is needed for testing.
+
 #### Container-rent                
 
 | ID            | Input                             | Code                              |
@@ -63,5 +71,78 @@ In this section the in- and output of the application will be described.
 
 | ID        | Input                                                        | Code                                               |
 | --------- | ------------------------------------------------------------ | -------------------------------------------------- |
-| `1`     | number: 1<br />volumeOfContainer:5m^3  | `new Customer(1, 5m^3 )`                  |
+| `1` | number: 1<br />volumeOfContainer:5m^3  | `new Customer(1, 5m^3 )`                  |
 | `2` | number: 2<br />volumeOfContainer:5m^3  | `new Customer(2, 5m^3 )` |
+
+ 
+ ### Test Cases
+
+In this section the testcases will be described. Every test case should be executed with the test data as starting point.
+
+  
+ #### #1 add a rental
+
+The customer add a rental to the company container rentals.
+
+|Step|Input|Action|Expected output|
+|----|-----|------|---------------|
+|1| `id` | `addRental()`  |systemMessage|
+ 
+#### #2 add a container
+
+The customer add a container to the rental containers.
+
+|Step|Input|Action|Expected output|
+|----|-----|------|---------------|
+|1| `id` | `addContainer()` |systemMessage|
+
+
+ 
+#### #3 Get payable charges of the rental
+
+Testing the method to get payable charges of the rental
+
+|Step|Input|Action|Expected output|
+|----|-----|------|---------------|
+|1|`mediamarkt`|`getCustomersFromCity("Emmen")`|Empty ArrayList|
+|3|`mediamarkt`|`addOrder(appleorder`)||
+|4|`mediamarkt`| `getCustomersFromCity("Emmen")` | ArrayList with customer `jan` |
+ 
+ #### #4 Get longest rental period
+
+Get longest rental period in container rentals
+
+|Step|Input|Action|Expected output|
+|----|-----|------|---------------|
+|1| `mediamarkt`|`removeCustomers(1)`||
+|2| `mediamarkt`|`getCustomers()`|ArrayList with only customer `martijn`|
+
+
+#### #5 Get average volume of container rentals
+
+Testing that we can remove customers based on the id lower than the given input.
+
+|Step|Input|Action|Expected output|
+|----|-----|------|---------------|
+|1|`mediamarkt`|`removeCustomers(1)`||
+|2| `mediamarkt` |`getCustomers()`|ArrayList with only customer `martijn`|
+
+#### #6 Get Container Price
+
+Testing the price method for a container. The `psorder` has a `PremiumCustomer` attached.
+
+| Step | Input        | Action       | Expected output |
+| ---- | ------------ | ------------ | --------------- |
+| 1    | `appleorder` | `getPrice()` | 1400            |
+| 2    | `psorder`    | `getPrice()` | 400             |
+
+#### #7 Get Company Profit
+
+Testing the total con profit.
+
+| Step | Input        | Action                 | Expected output |
+| ---- | ------------ | ---------------------- | --------------- |
+| 1    | `mediamarkt` | `addOrder(appleorder)` |                 |
+| 2    | `mediamarkt` | `getProfit()`          | 1400            |
+| 3    | `mediamarkt` | `addOrder(psorder)`    |                 |
+| 4    | `mediamarkt` | `getProfit()`          | 1900            |
