@@ -19,8 +19,6 @@ In this section the in- and output of the application will be described.
       
 |Case|Type|Conditions|
 |----|----|----------|
-|Customer number|`integer`|0 <`number`< 20|
-|Name Of Customer|`String` |not empty|
 |RentalstartDate|`date`|not empty|
 |RentalEndDate|`date`|not empty|
 |VolumeOfContainer|`interger`|0 <`number`< 20|
@@ -30,32 +28,40 @@ In this section the in- and output of the application will be described.
 
 |Case|Type|
 |----|----|
-|RentalPeriod|`integer`|
-|Price(per m3 per day)|`double`|
-|Payable charges|`double`|
+|The total income of company|`integer`|
+|Longest rental period|`integer`|
+|Average volume|`double`|
+|payable charges|`double`|
+
+
 
 #### Calculations
 
 | Case              | Calculation                        |
 | ----------------- | ---------------------------------- |
-| Payable charges | The sum of all the acumulative prices. |
+| Payable charges | The sum of all the acumulative container prices in a rental. |
 | RentalPeriod | The sum of all the rental days |
+| containerPrice | current price of each container |
+| The total income| The sum of all the payable charges in every rental |
 
 #### Container-rent                
 
 | ID            | Input                             | Code                              |
 | ------------- | --------------------------------- | --------------------------------- |
-| `rentalOne` | id:1 <br/>startDate: 20200506<br/>endDate:20200520<br />price: 40.00<br/>volumeOfContainer:3m^3 | `new Container-rent(1, 20200506, 20200520, 40.00,3m^3 )` |
-| `rentalTwo` | id:2 <br/>startDate: 20200706<br/>endDate:20200720<br />price: 40.00<br/>volumeOfContainer:5m^3 | `new Container-rent(2, 20200706, 20200720, 40.00,5m^3 )` |
+| `rentalOne` | id:1 <br/>startDate: 20200506<br/>endDate:20200520<br/><container>list | `new Container-rent(1, 20200506, 20200520,new container )` |
+| `rentalTwo` | id:2 <br/>startDate: 20200706<br/>endDate:20200720<br/><container>list | `new Container-rent(2, 20200706, 20200720,new container)` |
 
-#### Company
-| ID           | Input | Code          |
-| ------------ | ----- | ------------- |
-| `CompanyOne` | name: Rick's company| `new Company ()` |
+ 
+ #### Company                
 
-#### Customer
+| ID            | Input                             | Code                              |
+| ------------- | --------------------------------- | --------------------------------- |
+| `1` | id:1 <br/><rental>list | `new Container-rent(1, 20200506, 20200520,new rental)` |
+
+ 
+#### Container
 
 | ID        | Input                                                        | Code                                               |
 | --------- | ------------------------------------------------------------ | -------------------------------------------------- |
-| `jan`     | number: 1<br />name: Jan<br />                    | `new Customer(1, "Jan")`                  |
-| `martijn` | number: 2<br />name: Martijn<br /><br /> | `new Customer(2, "Martijn")` |
+| `1`     | number: 1<br />volumeOfContainer:5m^3  | `new Customer(1, 5m^3 )`                  |
+| `2` | number: 2<br />volumeOfContainer:5m^3  | `new Customer(2, 5m^3 )` |
