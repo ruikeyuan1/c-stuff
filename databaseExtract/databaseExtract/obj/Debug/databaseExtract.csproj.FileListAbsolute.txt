@@ -1,0 +1,14 @@
+C:\Users\Rick\source\repos\databaseExtract\databaseExtract\bin\Debug\databaseExtract.exe.config
+C:\Users\Rick\source\repos\databaseExtract\databaseExtract\bin\Debug\databaseExtract.exe
+C:\Users\Rick\source\repos\databaseExtract\databaseExtract\bin\Debug\databaseExtract.pdb
+C:\Users\Rick\source\repos\databaseExtract\databaseExtract\obj\Debug\databaseExtract.csproj.AssemblyReference.cache
+C:\Users\Rick\source\repos\databaseExtract\databaseExtract\obj\Debug\databaseExtract.csproj.SuggestedBindingRedirects.cache
+C:\Users\Rick\source\repos\databaseExtract\databaseExtract\obj\Debug\databaseExtract.Form1.resources
+C:\Users\Rick\source\repos\databaseExtract\databaseExtract\obj\Debug\databaseExtract.Properties.Resources.resources
+C:\Users\Rick\source\repos\databaseExtract\databaseExtract\obj\Debug\databaseExtract.csproj.GenerateResource.cache
+C:\Users\Rick\source\repos\databaseExtract\databaseExtract\obj\Debug\databaseExtract.csproj.CoreCompileInputs.cache
+C:\Users\Rick\source\repos\databaseExtract\databaseExtract\obj\Debug\databaseExtract.exe
+C:\Users\Rick\source\repos\databaseExtract\databaseExtract\obj\Debug\databaseExtract.pdb
+C:\Users\Rick\source\repos\databaseExtract\databaseExtract\obj\Debug\databaseExtract.companyData.resources
+C:\Users\Rick\source\repos\databaseExtract\databaseExtract\obj\Debug\databaseExtract.About.resources
+C:\Users\Rick\source\repos\databaseExtract\databaseExtract\obj\Debug\databaseExtract.Splash.resources
